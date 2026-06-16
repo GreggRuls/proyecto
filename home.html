@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-menu">
+        <a class="brand" href="home.html">Ping</a>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#flujo">Fases</a>
+            <a href="#demo">Demo</a>
+            <a href="index.html" class="salir">Salir</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <span class="tag">Mensajería moderna</span>
+                <h1>Organiza un grupo y comienza una llamada en segundos</h1>
+                <p>Una interfaz de chat inspirada en tus capturas: conversación, creación de grupo, selección de contactos, llamada activa y botón para colgar.</p>
+
+                <div class="home-actions">
+                    <a href="#flujo" class="btn primary">Ver fases</a>
+                    <a href="#demo" class="btn secondary">Abrir demo</a>
+                </div>
+            </div>
+
+            <section class="phone-preview" aria-label="Vista previa de chat Ping">
+                <div class="preview-header">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='48' fill='%238b6f47'/%3E%3Cpath d='M0 70c22-28 40-30 96-16v42H0z' fill='%235d372e'/%3E%3Cpath d='M20 12c20 12 36 14 56 4 4 15-4 30-20 36-18 7-36-2-36-40z' fill='%23c1a16b'/%3E%3C/svg%3E" alt="Avatar de Marcos Perez">
+                    <div>
+                        <h2>Marcos Perez</h2>
+                        <p>Activo hace 20 m</p>
+                    </div>
+                    <div class="header-actions">
+                        <button type="button" title="Llamar">☎</button>
+                        <button type="button" title="Video">▣</button>
+                    </div>
+                </div>
+
+                <div class="preview-messages">
+                    <p class="message sent">Bro, hay que hacer un grupo para organizar la carne asada.</p>
+                    <p class="message received">¿Puedes enseñarme cómo hacerlo?</p>
+                    <p class="message sent">Primero ve al botón crear grupo.</p>
+                    <p class="message received">Creo que entiendo</p>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="mensaje">
+                    <button type="button" title="Enviar imagen">▧</button>
+                    <button type="button" title="Emoji">☺</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="phase-section" id="flujo">
+            <div class="section-title">
+                <span class="tag">Proceso principal</span>
+                <h2>Las 6 fases de la interfaz</h2>
+            </div>
+
+            <ol class="phase-list">
+                <li><strong>Chat normal:</strong> el usuario conversa desde la ventana principal.</li>
+                <li><strong>Crear grupo:</strong> se presiona el botón superior de la lista.</li>
+                <li><strong>Agregar usuarios:</strong> aparece un contenedor con contactos seleccionables.</li>
+                <li><strong>Llamar:</strong> se usa el icono de teléfono en la conversación.</li>
+                <li><strong>Llamada iniciada:</strong> los participantes aparecen en la zona superior.</li>
+                <li><strong>Colgar:</strong> se presiona el botón negro con el teléfono y la X.</li>
+            </ol>
+        </section>
+
+        <section class="app-shell" id="demo">
+            <aside class="chat-list">
+                <h2>List</h2>
+                <form class="search-form">
+                    <label for="buscar">Buscar chat</label>
+                    <input id="buscar" type="search" placeholder="Buscar en chats">
+                </form>
+                <button class="group-button" type="button" data-open-group>+ Crear grupo</button>
+
+                <ul class="contacts">
+                    <li class="active">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23fafafa'/%3E%3Cpath d='M0 22 58 80H42L0 38z' fill='%23090909'/%3E%3Cpath d='M12 0 80 68v12H68L0 12V0z' fill='%23131313'/%3E%3Cpath d='M76 56 80 60v20h-8l-8-8z' fill='%23df4d48'/%3E%3C/svg%3E" alt="Imagen del grupo Carne Asada">
+                        <div><strong>Carne Asada grupo</strong><span>hola muy buenas.</span></div>
+                    </li>
+                    <li>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23806a5c'/%3E%3Cpath d='M0 54c20-17 36-20 80-10v36H0z' fill='%23352b29'/%3E%3C/svg%3E" alt="Avatar de Marcos Perez">
+                        <div><strong>Marcos Perez</strong><span>sticker.</span></div>
+                    </li>
+                    <li>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%237b4b23'/%3E%3Cpath d='M0 55c25-20 42-25 80-10v35H0z' fill='%23432713'/%3E%3C/svg%3E" alt="Avatar de Oscar Gutierrez">
+                        <div><strong>Oscar Gutierrez.</strong><span>se me olvido mi cartera</span></div>
+                    </li>
+                    <li>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%231d130f'/%3E%3C/svg%3E" alt="Avatar de Jose Emilio Pacheco">
+                        <div><strong>Jose Emilio Pacheco</strong><span>bro, mira esto.</span></div>
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="conversation">
+                <h2>Conversation</h2>
+                <div class="conversation-header">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23806a5c'/%3E%3Cpath d='M0 54c20-17 36-20 80-10v36H0z' fill='%23352b29'/%3E%3C/svg%3E" alt="Avatar de Marcos Perez">
+                    <div>
+                        <strong>Marcos Perez</strong>
+                        <span>Activo hace 20 m</span>
+                    </div>
+                    <button type="button" title="Iniciar llamada">☎</button>
+                    <button type="button" title="Iniciar video">▣</button>
+                </div>
+
+                <div class="call-panel">
+                    <div class="participant">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%237b4b23'/%3E%3Cpath d='M0 85c38-29 65-33 120-13v48H0z' fill='%23432713'/%3E%3C/svg%3E" alt="Oscar Gutierrez">
+                        <strong>Oscar Gutierrez.</strong>
+                    </div>
+                    <div class="participant">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23806a5c'/%3E%3Cpath d='M0 82c30-25 55-30 120-12v50H0z' fill='%23352b29'/%3E%3C/svg%3E" alt="Marcos Perez">
+                        <strong>Marcos Perez</strong>
+                    </div>
+                    <div class="participant">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%231d130f'/%3E%3C/svg%3E" alt="Jose Emilio Pacheco">
+                        <strong>Jose Emilio Pacheco</strong>
+                    </div>
+                    <button class="hang-button" type="button" title="Colgar llamada">☎ ×</button>
+                </div>
+
+                <div class="chat-area">
+                    <p class="message sent">Hola muy buenas, cree este grupo para organizarnos con la carne asada.</p>
+                    <p class="date">30 Nov, 2023, 9:41 a. m.</p>
+                </div>
+
+                <form class="message-form">
+                    <label for="mensaje">Mensaje</label>
+                    <input id="mensaje" type="text" placeholder="mensaje">
+                    <button type="button">Enviar</button>
+                </form>
+            </section>
+
+            <aside class="profile">
+                <h2>Profile</h2>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Ccircle cx='70' cy='70' r='70' fill='%23fafafa'/%3E%3Cpath d='M0 35 105 140H80L0 60z' fill='%23090909'/%3E%3Cpath d='M25 0 140 115v25h-22L0 22V0z' fill='%23131313'/%3E%3Cpath d='M132 96 140 104v36h-14l-15-15z' fill='%23df4d48'/%3E%3C/svg%3E" alt="Imagen de perfil del grupo">
+                <strong>Carne Asada grupo</strong>
+                <span>hola muy buenas.</span>
+                <a href="#flujo">Ver fases</a>
+            </aside>
+
+            <div class="group-overlay" data-group-modal hidden>
+                <form class="group-window" aria-labelledby="group-title">
+                    <button class="add-users-button" type="submit" id="group-title">Añadir a grupo.</button>
+
+                    <div class="member-list">
+                        <label class="member-option">
+                            <input type="checkbox" name="integrantes" value="Marcos Perez">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23806a5c'/%3E%3Cpath d='M0 54c20-17 36-20 80-10v36H0z' fill='%23352b29'/%3E%3C/svg%3E" alt="Avatar de Marcos Perez">
+                            <span>Marcos Perez</span>
+                        </label>
+
+                        <label class="member-option">
+                            <input type="checkbox" name="integrantes" value="Oscar Gutierrez">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%237b4b23'/%3E%3Cpath d='M0 55c25-20 42-25 80-10v35H0z' fill='%23432713'/%3E%3C/svg%3E" alt="Avatar de Oscar Gutierrez">
+                            <span>Oscar Gutierrez.</span>
+                        </label>
+
+                        <label class="member-option">
+                            <input type="checkbox" name="integrantes" value="Jose Emilio Pacheco">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%231d130f'/%3E%3C/svg%3E" alt="Avatar de Jose Emilio Pacheco">
+                            <span>Jose Emilio Pacheco</span>
+                        </label>
+
+                        <label class="member-option">
+                            <input type="checkbox" name="integrantes" value="Enrique">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%238a6f5b'/%3E%3Cpath d='M0 70c15-32 32-45 80-58v68H0z' fill='%23c5ad91'/%3E%3C/svg%3E" alt="Avatar de Enrique">
+                            <span>Enrique</span>
+                        </label>
+
+                        <label class="member-option">
+                            <input type="checkbox" name="integrantes" value="Luis Bartolino">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23a57a3b'/%3E%3Cpath d='M0 56c25-12 48-14 80-3v27H0z' fill='%23c39b57'/%3E%3C/svg%3E" alt="Avatar de Luis Bartolino">
+                            <span>Luis Bartolino</span>
+                        </label>
+
+                        <label class="member-option">
+                            <input type="checkbox" name="integrantes" value="Mama">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%23d7c2a1'/%3E%3Ccircle cx='29' cy='32' r='8' fill='%234f3729'/%3E%3Ccircle cx='53' cy='30' r='8' fill='%234f3729'/%3E%3Cpath d='M18 58c12 10 31 11 45 0v22H18z' fill='%23985c38'/%3E%3C/svg%3E" alt="Avatar de Mama">
+                            <span>Mamá</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>© 2026 Ping. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
